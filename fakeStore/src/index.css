@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .search-bar {
+      @apply w-[300px] transition-all duration-300 rounded-full group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none ;
+    }
+  }
+
+/* Add your responsive CSS here */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .product-card {
+      width: 100%;
+    }
+  
+    .modal-content {
+      flex-direction: column;
+    }
+  }
+  
+  /* Continue to add other necessary CSS styles */
+  .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modal-image {
+    max-width: 100%;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .quantity-controller {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
