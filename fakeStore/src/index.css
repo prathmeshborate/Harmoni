@@ -2,27 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-    .search-bar {
-      @apply w-[300px] transition-all duration-300 rounded-full group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none ;
-    }
+  .search-bar {
+    @apply w-[180px] sm:w-[300px] transition-all duration-300 rounded-full px-3 py-1 focus:outline-none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
   }
 
-/* Add your responsive CSS here */
-@media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-    }
-  
-    .product-card {
-      width: 100%;
-    }
-  
-    .modal-content {
-      flex-direction: column;
-    }
+  .search-bar {
+    width: 160px;
   }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .modal-content {
+    flex-direction: column;
+  }
+}
+
   
   /* Continue to add other necessary CSS styles */
   .modal-background {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import ProductModal from "./components/ProductModal";
 import ProductPage from "./components/ProductPage";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -31,6 +32,7 @@ const App = () => {
     <div className="App">
       <Navbar cartCount={cartCount} onCategorySelect={handleCategorySelect} />
       <ProductPage selectedCategory={selectedCategory} onProductClick={handleProductClick} />
+      <Footer />
       {selectedProduct && (
         <ProductModal
           product={selectedProduct}
