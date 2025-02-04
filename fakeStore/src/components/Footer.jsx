@@ -46,7 +46,7 @@ const Footer = () => {
               Made with 💖 by Prathmesh Borate
             </p>
             <a
-              href="https://prathmeshborate.github.io/Portfolio-Website/"
+              href="https://github.com/prathmeshborate"
               target="_blank"
               className="inline-block bg-red-600 text-white py-2 px-4 mt-4 text-sm rounded-full"
             >
